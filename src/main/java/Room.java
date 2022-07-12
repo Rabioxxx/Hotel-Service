@@ -3,4 +3,5 @@ public class Room {
     private int sleeps; // number of persons in room.
     private boolean isBathroom;
     private boolean isOccupied;
+    // testing commits
 }
