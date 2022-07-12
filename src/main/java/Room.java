@@ -1,7 +1,10 @@
 public class Room {
     private String roomNr;
     private int sleeps; // number of persons in room.
-    private boolean isBathroom;
+    private boolean haveBathroom;
     private boolean isOccupied;
-    // testing commits
+
+    public Room(String roomNr) {
+        this.roomNr = roomNr;
+    }
 }
