@@ -12,4 +12,8 @@ public class Hotel {
             rooms.add(new Room());
         }
     }
+
+    public List<Room> getRooms() {
+        return rooms;
+    }
 }
