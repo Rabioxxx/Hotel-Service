@@ -29,4 +29,8 @@ public class Room {
                 ", isOccupied=" + isOccupied +
                 '}';
     }
+
+    public boolean isOccupied() {
+        return isOccupied;
+    }
 }

@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Controller {
 
+    UserService us = new UserService();
+
     public void startMenu() {
         System.out.println("Welcome in the HotelApp menu.");
 
@@ -18,15 +20,18 @@ public class Controller {
 
     private void interactionMenu(char input) {
 
-        UserService us = new UserService();
-
         switch (input){
             case 'a':
                 for (Room room : us.getAllRooms()) {
-                    System.out.println(room.toString());
+                    System.out.println(room);
                 }
                 break;
             case 'b':
+                for (Room room : us.getAllRooms()) {
+                    if (!room.isOccupied()) {
+                        System.out.println(room);
+                    }
+                }
                 break;
             case 'c':
                 break;
